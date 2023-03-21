@@ -12,7 +12,7 @@ curl -XPUT -d '<14>1 2016-12-25T09:03:52.754646-06:00 contosohost1 antivirus 249
 - The first several fields of the message are not defined by the challenge so they are not saved. 
 - The alertname field is matched with the GREEDYDATA pattern, which matches all the characters between the quotation marks. 
 - Computername is matched with the HOSTNAME pattern, which matches strings resembling a computer hostname (letters, numbers, dashes).
-- Computer IP is matched with IP pattern, which matches strings in IPv4 or IPv6 format. 
+- Computer IP is matched with the IP pattern, which matches strings in IPv4 or IPv6 format. 
 - Severity is matched with POSINT, which matches positive integers. 
 ### Mutate
 - Converted the severity field from a string into an integer.
