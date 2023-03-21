@@ -64,5 +64,5 @@ curl -XPUT -d '<14>1 2016-12-25T09:03:52.754646-06:00 contosohost1 antivirus 249
 
 ## Questions
 ### Grok pattern:
-- Had issues matching the alertname due to the spaces. Is there a better way than the GREEDYDATA pattern? I also tried QUOTEDSTRING but that included the string literals in the field as well. 
+- Had issues matching the alertname due to the spaces. Is there a better way than the GREEDYDATA pattern? I also tried QUOTEDSTRING but that included the quotation marks in the field as well. 
 - The DATA pattern also works the same way. What is the difference between DATA and GREEDYDATA?
