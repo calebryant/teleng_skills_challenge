@@ -25,6 +25,43 @@ curl -XPUT -d '<14>1 2016-12-25T09:03:52.754646-06:00 contosohost1 antivirus 249
 ### File
 - Output file saved if needed. 
 
+## Results
+```
+{
+            "host" => {
+        "ip" => "127.0.0.1"
+    },
+             "url" => {
+          "port" => 8080,
+          "path" => "/",
+        "domain" => "127.0.0.1"
+    },
+        "severity" => "High",
+        "@version" => "1",
+      "@timestamp" => 2023-03-21T03:00:30.456084Z,
+       "source_ip" => "216.58.194.142",
+           "event" => {
+        "original" => "<14>1 2016-12-25T09:03:52.754646-06:00 contosohost1 antivirus 2496 - - alertname=\"Virus Found\" computername=\"contosopc42\" computerip=\"216.58.194.142\" severity=\"1\" \n"
+    },
+      "user_agent" => {
+        "original" => "curl/7.86.0"
+    },
+         "message" => "<14>1 2016-12-25T09:03:52.754646-06:00 contosohost1 antivirus 2496 - - alertname=\"Virus Found\" computername=\"contosopc42\" computerip=\"216.58.194.142\" severity=\"1\" \n",
+    "computername" => "contosopc42",
+            "http" => {
+        "version" => "HTTP/1.1",
+        "request" => {
+            "mime_type" => "application/x-www-form-urlencoded",
+                 "body" => {
+                "bytes" => "164"
+            }
+        },
+         "method" => "PUT"
+    },
+     "description" => "Virus Found"
+}
+```
+
 ## Questions
 ### Grok pattern:
 - Had issues matching the alertname due to the spaces. Is there a better way than the GREEDYDATA pattern? I also tried QUOTEDSTRING but that included the string literals in the field as well. 
