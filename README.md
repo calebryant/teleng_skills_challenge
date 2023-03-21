@@ -1,6 +1,6 @@
 # teleng_skills_challenge
 ## Input
-- Using http and cURL as the input source. This allows logstash to update the config file automatically without terminating it. Makes for smoother debugging. 
+- Using http and cURL as the input source. This allows logstash to update the config file automatically without terminating it. Makes for smoother editing and debugging. 
 
 ## Filter
 ### Grok
