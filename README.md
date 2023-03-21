@@ -47,7 +47,7 @@ curl -XPUT -d '<14>1 2016-12-25T09:03:52.754646-06:00 contosohost1 antivirus 249
         "original" => "curl/7.86.0"
     },
          "message" => "<14>1 2016-12-25T09:03:52.754646-06:00 contosohost1 antivirus 2496 - - alertname=\"Virus Found\" computername=\"contosopc42\" computerip=\"216.58.194.142\" severity=\"1\" \n",
-    "computername" => "contosopc42",
+    "hostname" => "contosopc42",
             "http" => {
         "version" => "HTTP/1.1",
         "request" => {
