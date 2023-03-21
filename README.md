@@ -2,7 +2,9 @@
 ## Input
 - Using http and cURL as the input source. This allows logstash to update the config file automatically without terminating it. Makes for smoother editing and debugging. 
 - Command used to send input: 
-    `curl -XPUT -d '<14>1 2016-12-25T09:03:52.754646-06:00 contosohost1 antivirus 2496 - - alertname="Virus Found" computername="contosopc42" computerip="216.58.194.142" severity="1"' http://127.0.0.1:8080`
+```
+curl -XPUT -d '<14>1 2016-12-25T09:03:52.754646-06:00 contosohost1 antivirus 2496 - - alertname="Virus Found" computername="contosopc42" computerip="216.58.194.142" severity="1"' http://127.0.0.1:8080
+```
 
 ## Filter
 ### Grok
