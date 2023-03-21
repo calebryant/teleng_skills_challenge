@@ -1,0 +1,2 @@
+Grok pattern:
+- Had issues matching the alertname due to the spaces. Is there a better way than the DATA pattern? I also tried QUOTEDSTRING but that included the string literals in the field as well. 
